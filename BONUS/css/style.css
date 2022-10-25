@@ -1,0 +1,23 @@
+body{
+  background-image: url('https://laverdadnoticias.com/__export/1632142734179/sites/laverdad/img/2021/09/20/rostro_de_voldemort_aparece_en_el_cielo_estambul.jpg_1958083947.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.dc-container{
+  margin: 0 auto;
+}
+
+h2{
+  color:lightgrey;
+}
+
+.card *:not(h5){
+  margin:0;
+ 
+}
+
+.card{
+  min-height:300px;
+}
