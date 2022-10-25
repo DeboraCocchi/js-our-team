@@ -17,43 +17,49 @@ const team = [
   {
     name: 'Lord Voldemort',
     role: 'Founder & CEO',
-    image: '../img/voldemort.png'
+    image: 'img/voldemort.png'
   } ,
   {
     name: 'Bellatrix Lestrange',
     role: 'Chief Editor',
-    image: '../img/bellatrix-lestrange.png'
+    image: 'img/bellatrix-lestrange.png'
   } ,
   {
     name: 'Severus Piton',
     role: 'Office Manager',
-    image: '../img/severus.png'
+    image: 'img/severus.jpeg'
   } ,
   {
     name: 'Peter Minus',
     role: 'Social Media Manager',
-    image: '../img/Peter-minus.png'
+    image: 'img/Peter-minus.png'
   } ,
   {
     name: 'Lucius Malfoy',
     role: 'Developer',
-    image: '../img/Lucius.png'
+    image: 'img/Lucius.png'
   } ,
   {
     name: 'Igor Karkaroff',
     role: 'Graphic Designer',
-    image: '../img/karkaroff.png'
+    image: 'img/karkaroff.png'
   } 
 
 ];
 
-const mainList = document.querySelector('.main-list');
+const row = document.querySelector('.row')
 for(let member of team){
-  console.log(member.name);
-  console.log(member.role);
-  const listItem = document.createElement('li');
-  const listItemContent = `<h5>${member.name}</h5><p>${member.role}</p>`;
-
-  listItem.innerHTML = listItemContent;
-  mainList.append(listItem);
+ 
+  let memberCard = `
+  <div class="card m-3 col-3" >
+  <img src="${member.image}" class="card-img-top mt-2" alt="${member.name}">
+  <div class="card-body">
+    <h5 class="member-name">${member.name}</h5>
+    <p class="member-role">${member.role}</p>
+    
+  </div>
+</div>
+  `;
+  row.innerHTML+=memberCard;
+  
 }
