@@ -19,28 +19,28 @@ const team = [
     role: 'Founder & CEO',
     image: 'img/voldemort.png',
     power: 10,
-    features: ['carismatico', 'potentissimo', 'dislocato (hai mai sentito parlare di Horcrux?)']
+    features: ['carismatico', 'potentissimo', 'dislocato (mai sentito parlare di Horcrux?)']
   } ,
   {
     name: 'Bellatrix Lestrange',
     role: 'Chief Editor',
     image: 'img/bellatrix-lestrange.png',
     power: 8,
-    features: ['pazza', 'sadica', 'indipendente']
+    features: ['pazza', 'sadica', 'ha l\'Avada Kedabra facile']
   } ,
   {
     name: 'Severus Piton',
     role: 'Office Manager',
     image: 'img/severus.jpeg',
     power: 9,
-    features: ['elegante', 'doppiogiochista', 'potente']
+    features: ['elegante', 'doppiogiochista', 'profondo conoscitore di arti oscure']
   } ,
   {
     name: 'Peter Minus',
     role: 'Social Media Manager',
     image: 'img/Peter-minus.png',
     power: 5,
-    features: ['disgustoso', 'trasfiguratore']
+    features: ['viscido', 'trasfiguratore']
   } ,
   {
     name: 'Lucius Malfoy',
@@ -54,7 +54,7 @@ const team = [
     role: 'Graphic Designer',
     image: 'img/karkaroff.png',
     power: 7,
-    features: ['crudele', 'delatore', 'vigliacco']
+    features: ['delatore', 'vigliacco']
   } 
 
 ];
@@ -69,7 +69,7 @@ for(let member of team){
 
   }
   let memberCard = `
-  <div class="card m-2 col-3" style="height: 24rem;">
+  <div class="card m-3 col-3" style="height: 28rem;">
   <img src="${member.image}" class="card-img-top mt-2" alt="${member.name}">
   <div class="card-body">
     <h5 class="member-name text-danger">${member.name}</h5>
