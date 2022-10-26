@@ -1,35 +1,104 @@
 body{
-  background-image: url('https://laverdadnoticias.com/__export/1632142734179/sites/laverdad/img/2021/09/20/rostro_de_voldemort_aparece_en_el_cielo_estambul.jpg_1958083947.jpg');
+   background-image: url('https://laverdadnoticias.com/__export/1632142734179/sites/laverdad/img/2021/09/20/rostro_de_voldemort_aparece_en_el_cielo_estambul.jpg_1958083947.jpg'); 
+  /* background: linear-gradient(45deg, rgba(8, 8, 8), rgb(86, 86, 97)); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
-.dc-container{
-  margin: 0 auto;
-  width:80%;
+header{
+  height:60px;
+  width:100%;
+  background-color: rgba(0,0,0,0.5);
 }
 
-h2{
+main{
+  height:calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.logo img{
+  height:50px;
+  margin:5px 5px 5px 15px;
+
+}
+
+.logo img:hover{
+transform:scale(105%);
+}
+.nav ul{
+  list-style: none;
+  height:100%;
+  margin-bottom:0;
+}
+
+.nav ul li a{
+  color:white;
+  text-decoration: none;
+  margin-left:15px;
+  font-size:80%;
+  font-weight:200;
+}
+.nav ul li a:hover{
+  text-decoration: underline;
+  font-weight:bold;
+}
+
+ul li a.active{
+  font-weight:bold;
+}
+
+.dc-container{
+  margin: 0 auto;
+  width:60%;
+}
+
+h4{
   color:lightgrey;
 }
 
-.card *:not(h5){
+.dc-card *:not(h5){
   margin:0;
+  font-size:90%;
  
 }
 
-.card{
-  min-height:300px;
+.dc-card h5{
+  margin-bottom:8px;
 }
 
+.dc-card{
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.9);
+}
+
+.dc-card card-body{
+  padding:20px;
+}
+
+.dc-card ul{
+  padding:0;
+  margin-left:15px;
+}
+
+.card-img-top{
+  transition: all .2s ease-in-out;
+
+}
+
+.card-img-top:hover{
+  transform:scale(110%);
+  opacity:0.9;
+}
+
+
 .cd{
-  width:40px;
-  height:40px;
+  width:30px;
+  height:30px;
 }
 
 footer{
   position: fixed;
   bottom:0;
-  right:0;;
+  right:12px;
 }

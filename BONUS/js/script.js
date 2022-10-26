@@ -69,13 +69,13 @@ for(let member of team){
 
   }
   let memberCard = `
-  <div class="card m-3 col-3" style="height: 28rem;">
+  <div class="card dc-card m-2 col-3" style="height: 20rem;">
   <img src="${member.image}" class="card-img-top mt-2" alt="${member.name}">
   <div class="card-body">
     <h5 class="member-name text-danger">${member.name}</h5>
     <p class="member-role"><strong>Ruolo: </strong>${member.role}</p>
     <p class="power-level"><strong>Mago di livello: </strong>${member.power}</p>
-    <h6><strong>Caratteristiche principali:</strong></h6>
+    <h6><strong>Caratteristiche:</strong></h6>
     <ul>${featuresList}</ul>
     
   </div>
@@ -85,4 +85,8 @@ for(let member of team){
   
 
   
+}
+
+function addNewMember(){
+  //da aggiungere membro attrabverso il form (che va poi resettato)
 }
